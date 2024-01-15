@@ -1,22 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
 #nav{
-    height: 7vh;
-    /* width: 100%; */
+    height: 8vh;
+    width: 100%;    
+    background-color: white;
     /* background-color: red; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 1px 5px 10px rgba(174, 172, 172, 0.79);
-    position: sticky;
-    top: 0;
-    /* z-index: 99; */
+    position: fixed;
+    /* position: relative; */
+    /* top: 0; */
+    z-index: 99;
 }
 
 #nav-part1 img{
     height: 2.5vw;
     width: 2.5vw;
-    /* padding: 2vw; */
-    padding-left: 14vw;
+    /* padding: 2vw;
+    padding-left: 14vw; */
+    left: 20%;
+    position: absolute;
 }
 #nav #nav-part2{
     display: flex;
@@ -40,16 +53,74 @@
     color: #006241;
 }
 #page1{
-    min-height: 85vh;
+    z-index: 5;
+    min-height: 90vh;
+    width: 100%;
     background-color: #ECDBC9;
     position: relative;
+    display: flex;
 }
 #page1 #left-content{
     width: 50%;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Poppins';
+    line-height: 4.5vw;
+    padding-left: 12vw;
 }
-#page1 #left-content{
-
+#left-content h5{
+    color: #1A343E;
+    font-size: 30px;
+    font-weight: 600;
+}
+#left-content h2{
+    color: #007346;
+    font-size: 75px;
+    font-weight: bold;
+}
+#left-content h3{
+    color: #1A343E;
+    font-size: 40px;
+    font-weight: 600;
+}
+#left-content button{
+    margin: 5px 15px;
+    width: 8vw;
+    height: 3vw;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: transparent;
+    color: rgb(8, 57, 11);
+    border: 3px solid rgb(8, 57, 11);
+}
+#left-content button:hover{
+    background-color: #1C332E;
+    color: white;
+}
+#page1 #right-content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-right: 5vw;
     width: 50%;
-    background-color: red;
+}
+#page1 #right-content img{
+    height: 25vw;
+    width: 35vw;
+    animation-name: three-cup-anim;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes three-cup-anim {
+    from{
+        transform: translate(2% , -2%);
+    }
+    to{
+        transform: translate(-2% , 2%);
+    }
 }
