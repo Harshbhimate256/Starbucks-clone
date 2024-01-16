@@ -386,3 +386,48 @@ html,body{
     background-color: #1B3433;
     cursor: pointer;
 }
+#footer{
+    min-height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#footer #footer-upper{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+#footer #footer-upper a{
+    text-decoration: none;
+    color: black;
+}
+#footer #footer-upper a:hover{
+    color: #007048;
+}
+#footer #footer-upper #icons{
+    font-size: 3vw;
+}
+#footer #footer-mid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: 1.8vw 30vw;
+    font-size: 1.5vw;
+    font-family: 'Poppins';
+}
+#footer #footer-mid h5{
+    font-weight: 600;
+}
+#footer #footer-mid h5:hover{
+    color: #006241;
+    cursor: pointer;
+}
+#footer #footer-lower{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 1.4vw;
+}
+#footer #footer-lower h5{
+    font-weight: 500;
+}
