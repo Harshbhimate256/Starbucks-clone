@@ -283,7 +283,7 @@ html,body{
     cursor: pointer;
 }
 #page4{
-    min-height: 80vh;
+    min-height:65vh;
     width: 100%;
     /* background-color: grey; */
     display: flex;
@@ -340,6 +340,48 @@ html,body{
     font-weight: bold;
 }
 #page4-left button:hover{
+    color: white;
+    background-color: #1B3433;
+    cursor: pointer;
+}
+#page5{
+    min-height: 55vh;
+    width: 100%;
+    position: relative;
+    background-color: #ECDBC9;
+    display: flex;
+    font-family: 'Poppins';
+}
+#page5 #page5-left{
+    display: flex;
+    width: 45%;
+    justify-content: right;
+}
+#page5 #page5-left img{
+    height: 20vw;
+    width: 35vw;
+    margin-top: 3vw;
+}
+#page5 #page5-right{
+    margin-top: 3vw;
+    width: 45%;
+    padding-left: 2vw;
+}
+#page5-right h5{
+    font-size: 1.3vw;
+}
+#page5-right p{
+    font-weight: 500;
+}
+#page5-right button{
+    height: 2.5vw;
+    width: 8.5vw;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+#page5-right button:hover{
     color: white;
     background-color: #1B3433;
     cursor: pointer;
