@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html,body{
     height: 100%;
@@ -41,11 +42,13 @@ html,body{
     justify-content: center;
     gap: 5vw;
 }
-#nav-part2 #links a{
+#nav-part2 #links button{
     text-decoration: none;
     color: black;
     font-family: 'Poppins';
     font-weight: 600;
+    border: none;
+    background-color: transparent;
     font-size: 1.3vw;
     margin: 0 1.5vw;
     transition-duration: .4s;
@@ -53,8 +56,9 @@ html,body{
 #nav-part2 #links{
     padding-right: 10vw;
 }
-#nav-part2 #links a:hover{
+#nav-part2 #links button:hover{
     color: #006241;
+    cursor: pointer;
 }
 #page1{
     z-index: 5;
